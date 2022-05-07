@@ -1,0 +1,124 @@
+@import "./variables";
+
+header {
+  border-bottom: $basis-border;
+
+  .header-module,
+  .header-nav {
+    width: $width;
+    margin: 0 auto;
+  }
+}
+
+.header-module {
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+
+  .header-module__divide-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &:first-child {
+      #symbol {
+        max-width: 12.8rem;
+        img {
+          width: 100%;
+        }
+      }
+
+      .search-bar {
+        border-radius: 2px;
+        padding: 1.5rem;
+        background-color: $--gray-30;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+
+        .search-bar__icon {
+          display: inline-block;
+          margin-right: 3px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .search-bar__input {
+          width: 100%;
+          border: none;
+          font-weight: 500;
+          background-color: transparent;
+
+          &::placeholder {
+            font-size: 1.4rem;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      justify-content: end;
+    }
+  }
+}
+
+.header-nav {
+  height: 5rem;
+  display: flex;
+  gap: 4rem;
+
+  .header-nav__divide-container {
+    display: flex;
+    gap: 2rem;
+
+    .header-nav__button {
+      border: 2px solid $--white;
+      padding: 1rem 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $--gray-400;
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      .header-nav__icon {
+        max-width: 2.4rem;
+        margin-right: 5px;
+        display: inline-block;
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        border-bottom: 2px solid $--blue-400;
+      }
+    }
+  }
+}
+
+.button-transparence {
+  border-radius: 2px;
+  padding: 1rem;
+  color: $--gray-400;
+  font-size: 1.5rem;
+  font-weight: 500;
+  &:hover {
+    background-color: $--gray-50;
+  }
+}
+
+.vertical-divider {
+  display: flex;
+  align-items: center;
+
+  > div {
+    height: 70%;
+    border: 0.5px solid $--gray-30;
+  }
+}

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상윤리얼트립 :: 나다운 진짜 여행</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="hidden">myrealtrip</h1>
+      <div class="header-module">
+        <div class="header-module__divide-container">
+          <div id="symbol">
+            <a href="/">
+              <img alt="myrealtrip" src="./assets/symbol.png" />
+            </a>
+          </div>
+          <div class="search-bar">
+            <div class="search-bar__icon">
+              <img alt="" src="./assets/icons/search.svg" />
+            </div>
+            <label class="hidden" for="search"
+              >도시나 상품을 검색해보세요</label
+            >
+            <input
+              class="search-bar__input"
+              name="search"
+              placeholder="도시나 상품을 검색해보세요"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="header-module__divide-container">
+          <button class="button-transparence">파트너 등록하기</button>
+          <button class="button-transparence">로그인</button>
+          <button class="button-blue">회원가입</button>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <div class="header-nav__divide-container">
+          <a href="/" class="header-nav__button">
+            <div class="header-nav__icon">
+              <img src="./assets/icons/airplane.png" alt="" />
+            </div>
+            항공권
+          </a>
+          <a href="/" class="header-nav__button">
+            <div class="header-nav__icon">
+              <img src="./assets/icons/flag.png" alt="" />
+            </div>
+            투어・티켓
+          </a>
+          <a href="/" class="header-nav__button">
+            <div class="header-nav__icon">
+              <img src="./assets/icons/overseas.png" alt="" />
+            </div>
+            해외숙소
+          </a>
+          <a href="/" class="header-nav__button">
+            <div class="header-nav__icon">
+              <img src="./assets/icons/domestic.png" alt="" />
+            </div>
+            국내숙소
+          </a>
+          <a href="/" class="header-nav__button">
+            <div class="header-nav__icon">
+              <img src="./assets/icons/car.png" alt="" />
+            </div>
+            렌터카
+          </a>
+        </div>
+        <div class="vertical-divider">
+          <div></div>
+        </div>
+        <div class="header-nav__divide-container">
+          <a href="/" class="header-nav__button"> 해외패키지 </a>
+          <a href="/" class="header-nav__button"> 호캉스 특가 </a>
+          <a href="/" class="header-nav__button"> 할인혜택 </a>
+          <a href="/" class="header-nav__button"> 아이와함께 </a>
+          <a href="/" class="header-nav__button"> 특별한제주 </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="card-module-wrapper">
+        <button class="card-slider-button card-slider-prev">
+          <img alt="prev" src="./assets/icons/prevbtn.svg" />
+        </button>
+        <button class="card-slider-button card-slider-next">
+          <img alt="next" src="./assets/icons/nextbtn.svg" />
+        </button>
+        <article class="card-module">
+          <div class="card__header">
+            <h2>여행이 돌아왔어요!</h2>
+            <button class="button-blue">
+              격리 없는 여행지
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+          <div id="main-items" class="card-slider-container">
+            <div class="card-slider">
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/busan.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>부산</h3>
+                  <h4>590여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/lasvegas.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>라스베가스</h3>
+                  <div class="no-isolation"></div>
+                  <h4>240여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/paris.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>파리</h3>
+                  <div class="no-isolation"></div>
+                  <h4>660여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/jeju.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>제주도</h3>
+                  <h4>3,170여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+            </div>
+            <div class="card-slider">
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/gangwon.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>강원도</h3>
+                  <h4>2,660여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/seoul.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>서울</h3>
+                  <h4>1,440여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/singapore.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>싱가포르</h3>
+                  <div class="no-isolation"></div>
+                  <h4>200여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/bangkok.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>방콕</h3>
+                  <div class="no-isolation"></div>
+                  <h4>370여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+            </div>
+            <div class="card-slider">
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/hanoi.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>하노이</h3>
+                  <div class="no-isolation"></div>
+                  <h4>60여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/london.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>런던</h3>
+                  <div class="no-isolation"></div>
+                  <h4>410여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/lisbon.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>리스본</h3>
+                  <div class="no-isolation"></div>
+                  <h4>90여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+              <div class="main-card">
+                <img
+                  class="main-card__img"
+                  alt=""
+                  src="./assets/domestic/saipan.jpg"
+                />
+                <div class="main-card__content">
+                  <h3>사이판</h3>
+                  <div class="no-isolation"></div>
+                  <h4>90여 개의 여행 상품</h4>
+                </div>
+                <button class="button-white"></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="card-module">
+        <div class="addvertisement">
+          <img alt="광고" src="./assets/ad/ad1.png" />
+        </div>
+      </section>
+      <section class="card-module-wrapper">
+        <button class="card-slider-button card-slider-prev">
+          <img alt="prev" src="./assets/icons/prevbtn.svg" />
+        </button>
+        <button class="card-slider-button card-slider-next">
+          <img alt="next" src="./assets/icons/nextbtn.svg" />
+        </button>
+        <article class="card-module">
+          <div class="card__header">
+            <h3 class="card__title">실시간 베스트 상품</h3>
+          </div>
+          <div class="card-slider-container">
+            <div class="card-slider">
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="gangwon" src="./assets/best/myreal108.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 강원도</h6>
+                  <h5>휘닉스 평창 호텔 & 리조트 숙박권 (3만원 즉시 할인)</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">630,000원</span>
+                      <span class="card__price">125,000원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="seoulland" src="./assets/best/seoulland.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>[당일사용] 서울랜드 어린이 평일 자유이용권</h5>
+                  <div class="event">
+                    <img alt="discount" src="./assets/icons/discount.svg" />
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">46,000원</span>
+                      <span class="card__price">18,333원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="jejuaewall" src="./assets/best/jejuaewall.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>액티비티 ・ 제주도</h6>
+                  <h5>[제주 애월] 9.81 파크 이용권</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1,084</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">58,500원</span>
+                      <span class="card__price">28,615원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="pyeonchang" src="./assets/best/pyeonchang.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 강원도</h6>
+                  <h5>[강원 평창] ★특가★ 휘닉스 평창 블루캐니언 연간이용권</h5>
+                  <div class="event">
+                    <img alt="discount" src="./assets/icons/discount.svg" />
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__price">135,264원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-slider">
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="busan" src="./assets/best/busan-haewoondae.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>여행편의 ・ 부산</h6>
+                  <h5>[부산 해운대] 블루라인파크 해변열차/스카이캡슐 이용권</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">48</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">7,000원</span>
+                      <span class="card__price">6,600원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="busan" src="./assets/best/paradise.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>레스토랑 ・ 부산</h6>
+                  <h5>[부산 해운대] 파라다이스호텔 닉스그릴 브런치 이용권</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__price">9,000원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="myreal" src="./assets/best/myreal109.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>코트야드 타임스퀘어 숙박권(3만원 즉시 할인)</h5>
+                  <div class="event">
+                    <img alt="discount" src="./assets/icons/discount.svg" />
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">413,600원</span>
+                      <span class="card__price">129,000원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="everland" src="./assets/best/everland.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>[QR코드 바로입장] 에버랜드 자유이용권 (오후권~)</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1,629</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">35,000원</span>
+                      <span class="card__price">29,003원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-slider">
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="everland" src="./assets/best/everland.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>[QR코드 바로입장] 에버랜드 자유이용권 (오후권~)</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1,629</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">35,000원</span>
+                      <span class="card__price">29,003원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="everland" src="./assets/best/everland.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>[QR코드 바로입장] 에버랜드 자유이용권 (오후권~)</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1,629</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">35,000원</span>
+                      <span class="card__price">29,003원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="everland" src="./assets/best/everland.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>[QR코드 바로입장] 에버랜드 자유이용권 (오후권~)</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1,629</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">35,000원</span>
+                      <span class="card__price">29,003원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <span> <i class="fa-regular fa-heart"></i></span>
+                  <img alt="everland" src="./assets/best/everland.jpg" />
+                </div>
+                <div class="card__content-container">
+                  <h6>티켓/패스 ・ 서울</h6>
+                  <h5>[QR코드 바로입장] 에버랜드 자유이용권 (오후권~)</h5>
+                  <div class="card__score">
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="card__comments-count">1,629</span>
+                  </div>
+                  <div class="card__price-container">
+                    <div>
+                      <span class="card__prev__price">35,000원</span>
+                      <span class="card__price">29,003원</span>
+                      <span> / 1인</span>
+                    </div>
+                    <div class="label-immediate__confirm">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="card-module">
+        <div class="card__header">
+          <h3 class="card__title">마이리얼트립의 여행 정보</h3>
+        </div>
+        <div id="myrealtrip__info">
+          <div class="myrealtrip__info__item">
+            <div class="myrealtrip__info__header">
+              <img alt="facebook" src="./assets/icons/facebook.svg" />
+              <div class="myrealtrip__info__title">
+                <span>마이리얼트립 페이스북 페이지</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="myrealtrip__info__content">
+              마이리얼트립 페이스북 페이지에서 각 여행지별로 정리된 유용한
+              정보와 여행자분들을 위한 이벤트를 확인해보세요.
+            </div>
+          </div>
+          <div class="myrealtrip__info__item">
+            <div class="myrealtrip__info__header">
+              <img alt="instagram" src="./assets/icons/instagram.svg" />
+              <div class="myrealtrip__info__title">
+                <span>마이리얼트립 인스타그램</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="myrealtrip__info__content">
+              세계 곳곳에서 활동중인 마이리얼트립의 가이드님과 여행자분들이
+              보내주신 아름다운 사진을 감상해보세요.
+            </div>
+          </div>
+          <div class="myrealtrip__info__item">
+            <div class="myrealtrip__info__header">
+              <img alt="naver" src="./assets/icons/naver.svg" />
+              <div class="myrealtrip__info__title">
+                <span>마이리얼트립 네이버 블로그</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="myrealtrip__info__content">
+              마이리얼트립의 네이버 블로그에서 리얼생생 여행정보, 여행 후기,
+              추천 가이드 정보를 확인해보세요.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-divider">
+          <div class="footer__consult-container">
+            <h4>데브코스 운영안내</h4>
+            <p>연중무휴(ㅠㅠ) 코어타임 13:00-18:00</p>
+            <p>주말/공휴일 포함, 한국시간 기준</p>
+            <p>얼굴 출첵 매일할 것</p>
+            <p>상담은 리아에게</p>
+            <button class="button-white">1:1 채팅상담</button>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-divider">
+              <h5>소개</h5>
+              <ul>
+                <li>회사소개</li>
+                <li>채용</li>
+                <li>공고</li>
+              </ul>
+            </div>
+            <div class="footer__nav-divider">
+              <h5>파트너</h5>
+              <ul>
+                <li>파트너 등록하기</li>
+                <li>Affiliate 프로그램</li>
+                <li>리얼파트너</li>
+                <li>파트너 블로그</li>
+              </ul>
+            </div>
+            <div class="footer__nav-divider">
+              <h5>지원</h5>
+              <ul>
+                <li>자주 묻는 질문</li>
+                <li>최저가 보장제</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider">
+          <div class="footer-row">
+            <div class="footer-policy">
+              <span>이용약관</span>
+              <span>개인정보 처리방침</span>
+              <span>취소 및 환불정책</span>
+            </div>
+            <div class="footer-SNSList">
+              <img src="./assets/icons/facebooklink.svg" />
+              <img src="./assets/icons/naverlink.svg" />
+              <img src="./assets/icons/instagramlink.svg" />
+              <img src="./assets/icons/youtubelink.svg" />
+              <div class="vertical-divider">
+                <div></div>
+              </div>
+              <img src="./assets/icons/applelink.svg" />
+              <img src="./assets/icons/googlelink.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

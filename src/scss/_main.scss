@@ -1,0 +1,289 @@
+@import "./variables";
+
+main {
+  width: $width;
+  margin: 0 auto;
+  padding: 6rem 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+
+  section:last-child {
+    margin-bottom: 10rem;
+  }
+}
+
+.card-module-wrapper {
+  position: relative;
+
+  .card-slider-button {
+    position: absolute;
+    top: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 0.5px solid $--gray-400;
+    border-radius: 50%;
+    background-color: $--white;
+    z-index: 1;
+    opacity: 0.8;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      opacity: 0.9;
+    }
+  }
+
+  .card-slider-prev {
+    left: -2rem;
+  }
+
+  .card-slider-next {
+    right: -1.5rem;
+  }
+}
+
+.card-module {
+  overflow: hidden;
+
+  .card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0px;
+
+    .button-blue {
+      border: none;
+    }
+  }
+
+  .addvertisement {
+    cursor: pointer;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-slider-container {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0px;
+    overflow: hidden;
+    display: flex;
+    gap: 1.5rem;
+
+    .card-slider {
+      &:first-child {
+        position: absolute;
+        top: 1rem;
+        left: -100%;
+      }
+
+      gap: 1.5rem;
+      $border-radius: 0.8rem;
+      $card-width: 250px;
+      $card-height: 330px;
+      $card-content-padding: 3rem 2rem;
+
+      display: inline-flex;
+      justify-content: space-between;
+
+      .main-card,
+      .card {
+        border-radius: $border-radius;
+        cursor: pointer;
+        width: $card-width;
+        height: $card-height;
+        overflow: hidden;
+      }
+
+      .main-card {
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+        .main-card__img {
+          filter: brightness(60%);
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+
+          &:hover {
+            transition-duration: 3s;
+            transform: scale(1.1);
+          }
+        }
+
+        .main-card__content {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 1rem;
+          z-index: 1;
+          color: $--white;
+          position: relative;
+          padding: $card-content-padding;
+
+          h4 {
+            margin-top: 1rem;
+          }
+        }
+
+        .button-white {
+          border: none;
+          position: absolute;
+          left: 2rem;
+          bottom: 2.5rem;
+
+          &:hover {
+            background-color: $--gray-50;
+          }
+
+          &::after {
+            content: "둘러보기";
+          }
+        }
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: $basis-border;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        .card__img {
+          position: relative;
+          span {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.8rem;
+            color: white;
+            font-weight: 600;
+          }
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .card__content-container {
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          color: $--gray-400;
+          flex-grow: 1;
+          gap: 0.5rem;
+
+          .event,
+          .card__score {
+            margin-top: auto;
+          }
+
+          .card__price-container {
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+
+            .card__prev__price {
+              text-decoration: line-through;
+            }
+
+            .card__price {
+              font-size: 1.3rem;
+              font-weight: 600;
+            }
+
+            .label-immediate__confirm {
+              font-size: 1.2rem;
+              color: $--gray-400;
+
+              span {
+                color: $--yellow-400;
+              }
+              &::after {
+                content: "즉시 확정";
+              }
+            }
+          }
+        }
+
+        &:hover {
+          transition-duration: 0.5s;
+          transform: translateY(-5px);
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+            rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+      }
+    }
+  }
+}
+
+.no-isolation {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  background-color: $--green-400;
+  color: $--white;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  &::after {
+    content: "격리 없음";
+  }
+}
+
+.star {
+  color: $--blue-400;
+  margin-right: -5px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  color: $--blue-400;
+  font-weight: 600;
+  &::after {
+    margin-left: 3px;
+    content: "후기 이벤트";
+  }
+}
+
+.card__comments-count {
+  margin-left: 5px;
+  color: $--gray-400;
+  font-size: 1rem;
+}
+
+#myrealtrip__info {
+  padding: 4rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $--gray-40;
+  border: $basis-border;
+  font-size: 1.3rem;
+  gap: 3rem;
+  color: $--gray-400;
+
+  .myrealtrip__info__item {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+
+    .myrealtrip__info__header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      color: $--blue-400;
+      span {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
