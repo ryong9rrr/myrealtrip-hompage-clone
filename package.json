@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "상윤리얼트립",
   "scripts": {
-    "build": "webpack --watch",
-    "prod": "webpack -p"
+    "build": "webpack"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
